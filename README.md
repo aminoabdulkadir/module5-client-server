@@ -44,23 +44,35 @@ The goal of this module is to implement a client-server application in C that al
 ### Test 1: Normal File
 - **Filename:** `test.txt`  
 - **Expected:** Client receives the file content.  
-- **Client Output:**  
+- **Client Output:**
+```txt
+Enter filename to request: test.txt
+Server response:
+Hello, this is a test file!  
 - **Screenshot:** `test1_screenshot.png`
 
 ### Test 2: File Does Not Exist
 - **Filename:** `missing.txt`  
 - **Expected:** Client receives an error message.  
-- **Client Output:**  
+- **Client Output:** Enter filename to request: missing.txt
+Server response:
+Error: File not found.
+  
 - **Screenshot:** `test2_screenshot.png`
 
 ### Test 3: File Larger Than 255 Characters
 - **Filename:** `long.txt`  
 - **Expected:** Client receives only the first 255 characters of the file.  
-- **Client Output:**  
+- **Client Output:** Enter filename to request: long.txt
+Server response:
+This is a long line. This is a long line. This is a long line. This is a long line. This is a long line. This is a long line. This is a long line. This is a long line. This is a long line. This is a long line. This is a long line. This is a lon
+  
 - **Screenshot:** `test3_screenshot.png`
 
 ### Test 4: Server Termination
 - **Action:** Stop the server with `Ctrl + C`  
 - **Expected:** Server stops gracefully without crashing.  
-- **Server Output:**  
+- **Server Output: ** ^C
+Server shutting down gracefully.
+  
 - **Screenshot:** `test4_screenshot.png`
