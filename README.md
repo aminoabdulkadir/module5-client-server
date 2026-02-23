@@ -45,7 +45,7 @@ The goal of this module is to implement a client-server application in C that al
 - **Filename:** `test.txt`  
 - **Expected:** Client receives the file content.  
 - **Client Output:**
-```txt
+
 Enter filename to request: test.txt
 Server response:
 Hello, this is a test file!  
